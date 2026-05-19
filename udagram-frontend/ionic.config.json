@@ -1,0 +1,11 @@
+{
+  "name": "udagram-frontend",
+  "type": "angular",
+  "integrations": {},
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://localhost:8080"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "udagram-frontend",
+  "version": "1.0.0",
+  "description": "Udagram Instagram Clone Frontend",
+  "main": "src/main.ts",
+  "scripts": {
+    "start": "ionic serve",
+    "build": "ionic build",
+    "test": "ng test",
+    "lint": "ng lint"
+  },
+  "dependencies": {
+    "@angular/common": "^15.0.0",
+    "@angular/core": "^15.0.0",
+    "@angular/forms": "^15.0.0",
+    "@angular/platform-browser": "^15.0.0",
+    "@angular/platform-browser-dynamic": "^15.0.0",
+    "@angular/router": "^15.0.0",
+    "@ionic/angular": "^6.3.0",
+    "rxjs": "^7.5.0",
+    "zone.js": "^0.12.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^15.0.0",
+    "@angular/cli": "^15.0.0",
+    "@angular/compiler": "^15.0.0",
+    "@angular/compiler-cli": "^15.0.0",
+    "@types/node": "^18.11.0",
+    "typescript": "^4.9.0"
+  }
+}
