@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import { FeedItem } from './FeedModel';
-import { requireAuth } from '../router';
+import { requireAuth } from '../middleware/auth';
 
 export const feedRouter = Router();
 

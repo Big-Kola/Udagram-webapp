@@ -11,9 +11,6 @@
     "seed": "npx sequelize-cli db:seed:all"
   },
   "dependencies": {
-    "@types/bcrypt": "^5.0.0",
-    "@types/jsonwebtoken": "^9.0.1",
-    "@types/multer": "^1.4.7",
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.1",
     "cors": "^2.8.5",
@@ -26,7 +23,11 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.19",
     "@types/express": "^4.17.15",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/multer": "^1.4.7",
     "@types/node": "^18.11.18",
     "@types/uuid": "^9.0.0",
     "sequelize-cli": "^6.5.2",
