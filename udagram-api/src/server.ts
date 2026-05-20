@@ -13,7 +13,8 @@ export const sequelize = new Sequelize(config.database, config.username, config.
 
 const app = express();
 
-app.use(cors());
+const corsOrigin = process.env.CORS_ORIGIN || '*';
+app.use(cors({ origin: corsOrigin }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 

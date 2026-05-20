@@ -1,6 +1,6 @@
 import { Model, DataTypes } from 'sequelize';
 import { sequelize } from '../../../server';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import { config } from '../../../config/config';
 
 export class User extends Model {

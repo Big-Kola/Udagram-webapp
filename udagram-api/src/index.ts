@@ -28,8 +28,9 @@ async function start(): Promise<void> {
     await sequelize.authenticate();
     console.log('Database connected');
 
-    await sequelize.sync({ force: true });
-    console.log('Tables recreated (force sync)');
+    const isProduction = process.env.NODE_ENV === 'production';
+    await sequelize.sync({ force: !isProduction });
+    console.log(`Tables synced (force=${!isProduction})`);
 
     await seed();
   } catch (err) {
